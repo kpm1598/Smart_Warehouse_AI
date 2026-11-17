@@ -1,5 +1,14 @@
 # Smart Warehouse AI — Web Deployment (Render, free tier)
 
+## ✅ LIVE (deployed 17 Nov 2026)
+
+- **Public URL: https://smart-warehouse-ai-3iu5.onrender.com**
+- GitHub repo: https://github.com/kpm1598/Smart_Warehouse_AI (branch `main`)
+- Render service: `smart-warehouse-ai` (free plan, Blueprint-managed from `render.yaml`; every push to `main` auto-redeploys)
+- Verified live after deploy: dashboard, `/health`, summary, store, locate, dispatch, warehouse map and AI comparison all working.
+- Terminal against the live backend (optional, PowerShell):
+  `$env:WAREHOUSE_API_BASE = "https://smart-warehouse-ai-3iu5.onrender.com/api/v1"` then run the terminal as usual.
+
 This project is ready to deploy as a single web service. The FastAPI backend
 serves the web dashboard itself, so **one deployment = the whole app**
 (backend + webpage + database). The terminal client stays a local program;
