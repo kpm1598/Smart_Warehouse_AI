@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { font-family: "Segoe UI", Arial, sans-serif; margin: 0; background: #f4f6f9; color: #1c2733; }
+header { background: #17365d; color: #fff; padding: 14px 20px; }
+header h1 { margin: 0; font-size: 20px; }
+nav { background: #1f4e79; padding: 8px 20px; display: flex; flex-wrap: wrap; gap: 14px; }
+nav a { color: #dbe9f6; text-decoration: none; font-size: 14px; }
+nav a:hover { color: #fff; text-decoration: underline; }
+main { max-width: 1000px; margin: 0 auto; padding: 20px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.card { background: #fff; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.card .value { font-size: 28px; font-weight: 700; color: #17365d; }
+.card .label { font-size: 13px; color: #5a6b7c; margin-top: 4px; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+th, td { padding: 9px 12px; text-align: left; border-bottom: 1px solid #e4eaf0; font-size: 14px; }
+th { background: #17365d; color: #fff; }
+form { background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.12); max-width: 520px; }
+label { display: block; margin: 10px 0 4px; font-size: 14px; font-weight: 600; }
+input, select { width: 100%; padding: 9px; border: 1px solid #b9c6d2; border-radius: 5px; font-size: 15px; }
+button { margin-top: 16px; background: #1f7a3d; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; font-size: 15px; cursor: pointer; }
+button:hover { background: #186331; }
+button.small { margin-top: 0; padding: 4px 10px; font-size: 12px; background: #1f4e79; }
+.result { margin-top: 16px; padding: 14px; border-radius: 8px; display: none; font-size: 14px; white-space: pre-line; }
+.result.ok { display: block; background: #e5f4ea; border: 1px solid #1f7a3d; }
+.result.err { display: block; background: #fdeaea; border: 1px solid #b3261e; }
+h2 { margin-top: 26px; font-size: 17px; }
+.grid-map { display: grid; grid-template-columns: repeat(3, 130px); gap: 10px; margin-top: 14px; }
+.cell { background: #fff; border: 2px solid #1f4e79; border-radius: 8px; padding: 10px; text-align: center; font-size: 13px; min-height: 86px; }
+.cell.receiving { border-color: #b3261e; background: #fdf0ef; }
+.cell .code { font-weight: 700; font-size: 16px; }
+.bar { height: 8px; background: #e4eaf0; border-radius: 4px; margin-top: 6px; }
+.bar > div { height: 8px; background: #1f7a3d; border-radius: 4px; }
+.filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.filters input, .filters select { width: auto; }

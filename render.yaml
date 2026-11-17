@@ -1,0 +1,20 @@
+# Smart Warehouse AI — Render deployment (free tier)
+# Render reads this file automatically when the GitHub repo is connected.
+# NOTE: Render's free-tier filesystem is EPHEMERAL. The SQLite database
+# below lives inside the service working directory and will be wiped on
+# every deploy, restart or spin-down — the app re-creates and re-seeds it
+# automatically on startup (seeded demo data). Fine for a college demo,
+# not for real records.
+services:
+  - type: web
+    name: smart-warehouse-ai
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: WAREHOUSE_DB_PATH
+        value: data/warehouse.db

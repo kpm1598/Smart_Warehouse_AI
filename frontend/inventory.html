@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inventory — Smart Warehouse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Smart Warehouse AI</h1></header>
+<nav id="nav"></nav>
+<main>
+<h2 style="margin-top:0">Inventory</h2>
+<div class="filters">
+<input id="search" type="text" placeholder="Search product name...">
+<select id="locFilter"><option value="">All locations</option></select>
+</div>
+<table><thead><tr><th>Product</th><th>Location</th><th>Quantity</th></tr></thead><tbody id="rows"></tbody></table>
+<p id="totals"></p>
+</main>
+<script src="js/api.js"></script>
+<script src="js/inventory.js"></script>
+</body>
+</html>

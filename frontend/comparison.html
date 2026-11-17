@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Search Comparison — Smart Warehouse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Smart Warehouse AI</h1></header>
+<nav id="nav"></nav>
+<main>
+<h2 style="margin-top:0">AI Search Comparison</h2>
+<form id="form">
+<label for="goal">Goal location</label>
+<select id="goal"></select>
+<label for="depth">DLS depth limit</label><input id="depth" type="number" min="0" value="4" required>
+<button type="submit">Run comparison (RECEIVING → goal)</button>
+<div class="result" id="result"></div>
+</form>
+<div id="table"></div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/comparison.js"></script>
+</body>
+</html>

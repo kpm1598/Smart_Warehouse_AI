@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispatch Stock — Smart Warehouse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Smart Warehouse AI</h1></header>
+<nav id="nav"></nav>
+<main>
+<h2 style="margin-top:0">Dispatch Stock</h2>
+<form id="form">
+<label for="name">Product name</label><input id="name" required>
+<label for="qty">Dispatch quantity</label><input id="qty" type="number" min="1" required>
+<button type="submit">Dispatch</button>
+<div class="result" id="result"></div>
+</form>
+</main>
+<script src="js/api.js"></script>
+<script src="js/dispatch.js"></script>
+</body>
+</html>

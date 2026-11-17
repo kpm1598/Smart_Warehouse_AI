@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locate Object — Smart Warehouse AI</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Smart Warehouse AI</h1></header>
+<nav id="nav"></nav>
+<main>
+<h2 style="margin-top:0">Locate Object</h2>
+<form id="form">
+<label for="name">Product name</label><input id="name" required>
+<label for="qty">Requested quantity</label><input id="qty" type="number" min="1" required>
+<button type="submit">Locate</button>
+<div class="result" id="result"></div>
+</form>
+<div id="details"></div>
+</main>
+<script src="js/api.js"></script>
+<script src="js/locate.js"></script>
+</body>
+</html>
